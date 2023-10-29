@@ -3,11 +3,10 @@
 [ext_resource type="Script" path="res://example/player.gd" id="1_1wgyn"]
 [ext_resource type="Texture2D" uid="uid://c3edqrixfvkcp" path="res://icon.svg" id="1_d6gsb"]
 [ext_resource type="Script" path="res://addons/2d_hitbox_system/hitbox.gd" id="2_eilqm"]
+[ext_resource type="Texture2D" uid="uid://c7qmc3rup0mua" path="res://sword.svg" id="4_gn8ip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37piy"]
 size = Vector2(103, 20)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3svp8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xuvya"]
 size = Vector2(128, 128)
@@ -30,10 +29,10 @@ shape = SubResource("RectangleShape2D_37piy")
 debug_color = Color(1, 0, 0.105882, 0.419608)
 
 [node name="Sprite2D" type="Sprite2D" parent="Hitbox"]
-position = Vector2(116.599, 1)
-rotation = 3.14159
-scale = Vector2(103.684, 19.2689)
-texture = SubResource("PlaceholderTexture2D_3svp8")
+position = Vector2(112, 0.999998)
+rotation = 0.794858
+scale = Vector2(0.103004, 0.103004)
+texture = ExtResource("4_gn8ip")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
