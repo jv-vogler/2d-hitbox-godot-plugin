@@ -14,7 +14,7 @@ size = Vector2(128, 128)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_1wgyn")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="PlayerSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_d6gsb")
 
 [node name="Hitbox" type="Area2D" parent="."]
@@ -23,18 +23,18 @@ collision_mask = 0
 script = ExtResource("2_eilqm")
 attack_source = 1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="HitboxCollision" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(116.5, 1)
 shape = SubResource("RectangleShape2D_37piy")
 debug_color = Color(1, 0, 0.105882, 0.419608)
 
-[node name="Sprite2D" type="Sprite2D" parent="Hitbox"]
+[node name="HitboxSprite" type="Sprite2D" parent="Hitbox"]
 position = Vector2(112, 0.999998)
 rotation = 0.794858
 scale = Vector2(0.103004, 0.103004)
 texture = ExtResource("4_gn8ip")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("RectangleShape2D_xuvya")
 
