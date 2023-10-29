@@ -19,7 +19,12 @@ func _setup_attack_data() -> void:
 
 
 func _on_hitbox_hit(hurt_enemy) -> void:
-	print("Touche! I hit a level {0} enemy!".format([hurt_enemy.level]))
+	print_rich(
+		(
+			"[color=green][b](Hit)[/b][/color] I hit a level [color=green][b]%s[/b][/color] enemy!"
+			% [hurt_enemy.level]
+		)
+	)
 
 
 # Player Movement

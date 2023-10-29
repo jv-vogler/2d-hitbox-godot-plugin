@@ -6,4 +6,9 @@ var defense := 4
 
 
 func _on_hurtbox_hurt(hit_data) -> void:
-	print("Ouch! I took {0} damage!".format([hit_data.damage - defense]))
+	print_rich(
+		(
+			"[color=orangered][b](Hurt)[/b][/color] I took [color=orangered][b]%s[/b][/color] damage!"
+			% [hit_data.damage - defense]
+		)
+	)
